@@ -5,7 +5,9 @@
  */
 
 import {LitElement, html, css} from 'lit';
-
+// import {MyLitWrapper} from "./public/bundle.js"
+// window.customElements.define('my-lit-wrapper', MyLitWrapper);
+import  "./public/bundle.js"
 /**
  * An example element.
  *
@@ -53,7 +55,7 @@ export class MyElement extends LitElement {
       <button @click=${this._onClick} part="button">
         Click Count: ${this.count}
       </button>
-      <slot></slot>
+      <my-lit-wrapper></my-lit-wrapper>
     `;
   }
 
